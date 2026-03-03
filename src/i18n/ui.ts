@@ -1,225 +1,221 @@
-export const languages: Record<'fr' | 'en', { name: string; flag: string }> = {
-  fr: { name: 'Français', flag: 'fr' },
+export const languages: Record<'de' | 'en', { name: string; flag: string }> = {
+  de: { name: 'Deutsch', flag: 'de' },
   en: { name: 'English', flag: 'us' },
 } as const;
 
-export const defaultLanguage = 'fr';
+export const defaultLanguage = 'de';
 
 export type LanguageCode = keyof typeof languages;
 
 export const ui = {
-  fr: {
+  de: {
     projectsContent: {
       sampleProject: {
-        title: 'Exemple de Projet',
-        description: "Ceci est un projet d'exemple pour le template.",
-        imageAltText: "Image placeholder pour le projet d'exemple",
-        categoryText: 'Application Web',
-        dateText: 'Janvier 2025',
+        title: 'Beispielprojekt',
+        description: 'Dies ist ein Beispielprojekt für das Template.',
+        imageAltText: 'Platzhalterbild für das Beispielprojekt',
+        categoryText: 'Webanwendung',
+        dateText: 'Januar 2025',
         detailedDescription:
-          "Une description plus détaillée de ce projet d'exemple, montrant comment structurer le contenu pour la page de détail du projet.",
+          'Eine detailliertere Beschreibung dieses Beispielprojekts, die zeigt, wie Inhalte für die Projektdetailseite strukturiert werden.',
         keyFeatures: {
           responsiveDesign: {
-            title: 'Design Adaptatif',
-            description: "Le projet s'adapte à toutes les tailles d'écran.",
+            title: 'Responsives Design',
+            description: 'Das Projekt passt sich an alle Bildschirmgrößen an.',
           },
           contentManagement: {
-            title: 'Gestion de Contenu Facile',
+            title: 'Einfache Inhaltsverwaltung',
             description:
-              'Permet une gestion aisée du contenu via des fichiers Markdown ou un CMS.',
+              'Ermöglicht eine einfache Inhaltsverwaltung über Markdown-Dateien oder ein CMS.',
           },
         },
-        galleryImages: {
-          // sampleGalleryImage1: { // Si tu actives la galerie pour l'exemple
-          //   alt: "Texte alternatif pour l'image de galerie 1",
-          //   caption: "Légende pour l'image de galerie 1",
-          // },
-        },
+        galleryImages: {},
         challenges:
-          'Description des défis rencontrés lors de la création de ce projet exemple.',
-        learnings: 'Description des apprentissages tirés de ce projet exemple.',
+          'Beschreibung der Herausforderungen bei der Erstellung dieses Beispielprojekts.',
+        learnings: 'Beschreibung der Erkenntnisse aus diesem Beispielprojekt.',
       },
     },
     skillsContent: {
       frontendDevelopment: {
-        title: 'Développement Frontend',
+        title: 'Frontend-Entwicklung',
         description:
-          "Création d'interfaces utilisateur interactives et performantes.",
+          'Erstellung interaktiver und leistungsstarker Benutzeroberflächen.',
       },
       backendDevelopment: {
-        title: 'Développement Backend',
-        description: "Construction de logiques serveur robustes et d'API.",
+        title: 'Backend-Entwicklung',
+        description: 'Aufbau robuster Serverlogik und APIs.',
       },
       uiUxDesign: {
-        title: 'Design UI/UX',
+        title: 'UI/UX-Design',
         description:
-          "Conception d'expériences utilisateur intuitives et esthétiques.",
+          'Gestaltung intuitiver und ästhetischer Benutzererfahrungen.',
       },
       devOps: {
         title: 'DevOps',
         description:
-          'Automatisation des processus de développement et de déploiement.',
+          'Automatisierung von Entwicklungs- und Bereitstellungsprozessen.',
       },
     },
     site: {
-      title: 'Mon Super Template',
-      description:
-        'Un template Astro moderne et performant pour démarrer votre projet.',
+      title: 'Mein Profil',
+      description: 'Willkommen auf meiner Website.',
     },
     nav: {
-      home: 'Accueil',
+      home: 'Startseite',
       blog: 'Blog',
-      contact: 'Contact',
-      projects: 'Projets',
-      tips: 'Astuces',
+      contact: 'Kontakt',
+      projects: 'Projekte',
+      tips: 'Tipps',
+      agb: 'AGB',
+      impressum: 'Impressum',
     },
     footer: {
-      rights: 'Tous droits réservés.',
+      rights: 'Alle Rechte vorbehalten.',
     },
     homePage: {
-      pageTitle: 'Accueil |  Développeur FullStack',
+      pageTitle: 'Startseite | Fullstack-Entwickler',
       pageDescription:
-        "Bienvenue sur le portfolio de YOUR_NAME, développeur FullStack passionné par la création d'expériences web innovantes.",
-      heroGreeting: "Salut, c'est YOUR_NAME",
-      heroSubtitlePart1: 'Développeur FullStack',
-      heroSubtitlePart2: 'Passionné UI/UX',
-      heroIntroduction: 'Ajouter une introduction ici.',
-      heroViewWorkButton: 'Mes réalisations',
-      heroContactButton: 'Me contacter',
+        'Willkommen auf dem Portfolio von YOUR_NAME, einem Fullstack-Entwickler mit Leidenschaft für innovative Web-Erlebnisse.',
+      heroGreeting: 'Hallo, ich bin YOUR_NAME',
+      heroSubtitlePart1: 'Fullstack-Entwickler',
+      heroSubtitlePart2: 'UI/UX-Begeistert',
+      heroIntroduction: 'Fügen Sie hier eine Einleitung hinzu.',
+      heroViewWorkButton: 'Meine Projekte',
+      heroContactButton: 'Kontakt aufnehmen',
       heroImageAlt:
-        'Illustration représentant YOUR_NAME ou un concept de développement',
-      featuredProjectsTitle: '3 derniers projets',
+        'Illustration von YOUR_NAME oder einem Entwicklungskonzept',
+      featuredProjectsTitle: '3 neueste Projekte',
       featuredProjectsDescription:
-        "Voici quelques projets sur lesquels j'ai récemment travaillé. N'hésitez pas à les explorer !",
-      projectCardViewProject: 'Voir le projet',
-      projectCardViewCode: 'Voir le code',
-      imageNotAvailable: 'Image bientôt disponible',
-      mySkillsTitle: 'Mes Compétences',
+        'Hier sind einige Projekte, an denen ich kürzlich gearbeitet habe.',
+      projectCardViewProject: 'Projekt ansehen',
+      projectCardViewCode: 'Code ansehen',
+      imageNotAvailable: 'Bild demnächst verfügbar',
+      mySkillsTitle: 'Meine Fähigkeiten',
       mySkillsDescription:
-        "Explorez l'expertise et les capacités qui définissent mon travail et ma passion.",
+        'Entdecken Sie die Kompetenzen und Fähigkeiten, die meine Arbeit ausmachen.',
     },
     blogPage: {
-      pageTitle: 'Mon Blog Technique',
+      pageTitle: 'Mein technischer Blog',
       pageDescription:
-        "Articles et réflexions sur le développement web, l'architecture logicielle, et les nouvelles technologies.",
-      title: 'Mon Blog Technique',
+        'Artikel und Gedanken zu Webentwicklung, Softwarearchitektur und neuen Technologien.',
+      title: 'Mein technischer Blog',
       description:
-        "Articles et réflexions sur le développement web, l'architecture logicielle, et les nouvelles technologies.",
-      comingSoon:
-        'Les articles de blog apparaîtront ici bientôt. Revenez plus tard !',
-      heroImageAlt: "Image de couverture pour l'article : ",
-      publishedOn: 'Publié le : ',
-      readMore: 'Lire la suite',
-      readingTimeSuffix: 'min de lecture',
-      searchPlaceholder: 'Rechercher des articles...',
-      filterByTagButtonLabel: 'Filtrer par tag',
-      noTagFound: 'Aucun tag trouvé.',
-      selectTagCommandPlaceholder: 'Rechercher un tag...',
-      allTagsLabel: 'Tous les tags',
-      noPostsFound: 'Aucun article trouvé.',
+        'Artikel und Gedanken zu Webentwicklung, Softwarearchitektur und neuen Technologien.',
+      comingSoon: 'Blog-Artikel erscheinen hier bald. Schauen Sie später vorbei!',
+      heroImageAlt: 'Titelbild für den Artikel: ',
+      publishedOn: 'Veröffentlicht am: ',
+      readMore: 'Weiterlesen',
+      readingTimeSuffix: 'Min. Lesezeit',
+      searchPlaceholder: 'Artikel suchen...',
+      filterByTagButtonLabel: 'Nach Tag filtern',
+      noTagFound: 'Kein Tag gefunden.',
+      selectTagCommandPlaceholder: 'Tag suchen...',
+      allTagsLabel: 'Alle Tags',
+      noPostsFound: 'Keine Artikel gefunden.',
     },
     blogPost: {
-      publishedOn: 'Publié le : ',
-      updatedOn: 'Mis à jour le : ',
-      heroImageAlt: "Image de couverture pour l'article : ",
-      backToList: 'Retour à la liste des articles',
-      readingTimeSuffix: 'min de lecture',
-      relatedPostsTitle: 'Je te recommande aussi :',
-      readMore: 'Lire la suite',
-      editOnGithub: 'Proposer une modification sur GitHub',
+      publishedOn: 'Veröffentlicht am: ',
+      updatedOn: 'Aktualisiert am: ',
+      heroImageAlt: 'Titelbild für den Artikel: ',
+      backToList: 'Zurück zur Artikelliste',
+      readingTimeSuffix: 'Min. Lesezeit',
+      relatedPostsTitle: 'Das könnte Sie auch interessieren:',
+      readMore: 'Weiterlesen',
+      editOnGithub: 'Änderung auf GitHub vorschlagen',
     },
     toc: {
-      title: "Sommaire de l'article",
+      title: 'Inhaltsverzeichnis',
     },
     contactPage: {
-      pageTitle: 'Me Contacter',
+      pageTitle: 'Kontakt',
       pageDescription:
-        "Discutons de ton projet, d'une collaboration potentielle, ou simplement pour échanger sur la tech !",
-      title: 'Me Contacter',
+        'Lassen Sie uns über Ihr Projekt, eine mögliche Zusammenarbeit oder einfach über Technik sprechen!',
+      title: 'Kontakt',
       description:
-        "Discutons de ton projet, d'une collaboration potentielle, ou simplement pour échanger sur la tech !",
-
-      formTitle: 'Envoyer un message',
-      firstNameLabel: 'Prénom',
-      lastNameLabel: 'Nom',
-      emailLabel: 'Email',
-      messageLabel: 'Message',
-      sendButtonLabel: 'Envoyer',
-      firstNamePlaceholder: 'Ton prénom',
-
-      lastNamePlaceholder: 'Ton nom de famille',
-      emailPlaceholder: 'Ton adresse e-mail',
-      messagePlaceholder: 'Ton message ici...',
-      calendarTitle: 'Planifier un RDV',
+        'Lassen Sie uns über Ihr Projekt, eine mögliche Zusammenarbeit oder einfach über Technik sprechen!',
+      formTitle: 'Nachricht senden',
+      firstNameLabel: 'Vorname',
+      lastNameLabel: 'Nachname',
+      emailLabel: 'E-Mail',
+      messageLabel: 'Nachricht',
+      sendButtonLabel: 'Senden',
+      firstNamePlaceholder: 'Ihr Vorname',
+      lastNamePlaceholder: 'Ihr Nachname',
+      emailPlaceholder: 'Ihre E-Mail-Adresse',
+      messagePlaceholder: 'Ihre Nachricht hier...',
+      calendarTitle: 'Termin vereinbaren',
       calendarDescription:
-        'Tu préfères discuter de vive voix ? Réservez directement un créneau dans mon agenda.',
-      calendarButtonLabel: 'Voir mes disponibilités',
-      calendarLinkLabel: 'Voir mon agenda',
-      calendarPlaceHolder:
-        "L'intégration avec Google Calendar se fera bientôt...",
-      orSeparatorText: 'OU',
-      toastSuccessMessageSent: 'Message envoyé avec succès !',
-      toastErrorFailedToSend: "Échec de l'envoi du message.",
-      toastErrorUnexpected: "Une erreur inattendue s'est produite.",
-      toastErrorDetails: "Détails de l'erreur:",
-      toastErrorValidationFailed: 'Validation du formulaire échouée.',
+        'Lieber persönlich sprechen? Buchen Sie direkt einen Termin in meinem Kalender.',
+      calendarButtonLabel: 'Verfügbarkeit anzeigen',
+      calendarLinkLabel: 'Meinen Kalender anzeigen',
+      calendarPlaceHolder: 'Google Calendar-Integration folgt bald...',
+      orSeparatorText: 'ODER',
+      toastSuccessMessageSent: 'Nachricht erfolgreich gesendet!',
+      toastErrorFailedToSend: 'Nachricht konnte nicht gesendet werden.',
+      toastErrorUnexpected: 'Ein unerwarteter Fehler ist aufgetreten.',
+      toastErrorDetails: 'Fehlerdetails:',
+      toastErrorValidationFailed: 'Formularvalidierung fehlgeschlagen.',
     },
     projectDetailPage: {
-      backToProjects: 'Retour aux Projets',
-      categoryLabel: 'Catégorie :',
-      dateLabel: 'Date :',
-      aboutTitle: 'À propos de ce projet',
-      keyFeaturesTitle: 'Fonctionnalités Clés',
+      backToProjects: 'Zurück zu den Projekten',
+      categoryLabel: 'Kategorie:',
+      dateLabel: 'Datum:',
+      aboutTitle: 'Über dieses Projekt',
+      keyFeaturesTitle: 'Hauptfunktionen',
       galleryTitle: 'Galerie',
-      challengesTitle: 'Défis Rencontrés',
-      learningsTitle: 'Leçons Apprises',
-      visitProjectButton: 'Visiter le Projet',
-      viewCodeButton: 'Voir le Code',
+      challengesTitle: 'Herausforderungen',
+      learningsTitle: 'Erkenntnisse',
+      visitProjectButton: 'Projekt besuchen',
+      viewCodeButton: 'Code ansehen',
     },
     projectsPage: {
-      title: 'Mes Projets',
-      metaTitle: 'Mes Projets | Portfolio',
-      metaDescription: 'Découvrez tous les projets.',
-      noProjects: 'Aucun projet à afficher pour le moment.',
+      title: 'Meine Projekte',
+      metaTitle: 'Meine Projekte | Portfolio',
+      metaDescription: 'Entdecken Sie alle Projekte.',
+      noProjects: 'Momentan keine Projekte vorhanden.',
       noProjectsDescription:
-        "Il semble que vous n'ayez pas encore de projets à afficher.",
+        'Es scheint, dass noch keine Projekte vorhanden sind.',
     },
     notFoundPage: {
-      pageTitle: 'Page Non Trouvée',
-      title: 'Oups ! Page Non Trouvée',
+      pageTitle: 'Seite nicht gefunden',
+      title: 'Ups! Seite nicht gefunden',
       message:
-        "Désolé, la page que vous recherchez ne semble pas exister. Vérifiez l'URL ou retournez à la page d'accueil.",
-      homeLink: "Retourner à l'Accueil",
+        'Die gesuchte Seite scheint nicht zu existieren. Überprüfen Sie die URL oder kehren Sie zur Startseite zurück.',
+      homeLink: 'Zur Startseite',
     },
-
     tipsPage: {
-      metaTitle: 'Astuces de Développement',
+      metaTitle: 'Entwicklungstipps',
       metaDescription:
-        'Découvrez des astuces et conseils rapides sur le développement web et la cloud computing.',
+        'Entdecken Sie schnelle Tipps und Ratschläge zu Webentwicklung und Cloud Computing.',
       description:
-        'Découvrez des astuces et conseils rapides sur le développement web et la cloud computing.',
-      title: 'Nos Dernières Astuces',
-      noTips: 'Aucune astuce à afficher pour le moment.',
-      readTip: "Lire l'astuce",
-      backToList: 'Retour à la liste des astuces',
-      featuredTips: 'Astuces recommandées',
-      allTips: 'Toutes les astuces',
-      tipsAvailable: 'astuces disponibles',
-      tipAvailable: 'astuce disponible',
-      editOnGithub: 'Modifier sur GitHub',
+        'Entdecken Sie schnelle Tipps und Ratschläge zu Webentwicklung und Cloud Computing.',
+      title: 'Unsere neuesten Tipps',
+      noTips: 'Momentan keine Tipps vorhanden.',
+      readTip: 'Tipp lesen',
+      backToList: 'Zurück zur Tippliste',
+      featuredTips: 'Empfohlene Tipps',
+      allTips: 'Alle Tipps',
+      tipsAvailable: 'Tipps verfügbar',
+      tipAvailable: 'Tipp verfügbar',
+      editOnGithub: 'Auf GitHub bearbeiten',
+    },
+    agbPage: {
+      pageTitle: 'Allgemeine Geschäftsbedingungen',
+      pageDescription: 'Unsere Allgemeinen Geschäftsbedingungen.',
+    },
+    impressumPage: {
+      pageTitle: 'Impressum',
+      pageDescription: 'Rechtliche Informationen.',
     },
     zodErrors: {
-      // Common errors
-      invalid_type: 'Type invalide.',
-      invalid_type_received_undefined: 'Ce champ est requis.', // For required fields (fallback)
-      required_field_custom: 'Le champ {fieldName} est requis.',
-      // String errors
-      too_small_string_minimum: 'Doit contenir au moins {minimum} caractères.',
-      too_big_string_maximum: 'Ne doit pas dépasser {maximum} caractères.',
-      invalid_string_email: 'Adresse e-mail invalide.',
-      invalid_string_url: 'URL invalide.',
-      invalid_string_uuid: 'UUID invalide.',
-      // You can add more specific messages as needed
+      invalid_type: 'Ungültiger Typ.',
+      invalid_type_received_undefined: 'Dieses Feld ist erforderlich.',
+      required_field_custom: 'Das Feld {fieldName} ist erforderlich.',
+      too_small_string_minimum: 'Muss mindestens {minimum} Zeichen lang sein.',
+      too_big_string_maximum: 'Darf nicht mehr als {maximum} Zeichen lang sein.',
+      invalid_string_email: 'Ungültige E-Mail-Adresse.',
+      invalid_string_url: 'Ungültige URL.',
+      invalid_string_uuid: 'Ungültige UUID.',
     },
   },
   en: {
@@ -243,12 +239,7 @@ export const ui = {
               'Allows for easy content management via Markdown files or a CMS.',
           },
         },
-        galleryImages: {
-          // sampleGalleryImage1: { // If you enable gallery for the example
-          //   alt: 'Alt text for gallery image 1',
-          //   caption: 'Caption for gallery image 1',
-          // },
-        },
+        galleryImages: {},
         challenges:
           'Description of challenges encountered while creating this sample project.',
         learnings: 'Description of learnings from this sample project.',
@@ -274,9 +265,8 @@ export const ui = {
       },
     },
     site: {
-      title: 'My Awesome Template',
-      description:
-        'A modern and performant Astro template to kickstart your project.',
+      title: 'My Profile',
+      description: 'Welcome to my page.',
     },
     nav: {
       home: 'Home',
@@ -284,6 +274,8 @@ export const ui = {
       contact: 'Contact',
       projects: 'Projects',
       tips: 'Tips',
+      agb: 'AGB',
+      impressum: 'Impressum',
     },
     footer: {
       rights: 'All rights reserved.',
@@ -337,6 +329,7 @@ export const ui = {
       readingTimeSuffix: 'min read',
       relatedPostsTitle: 'Continue Reading',
       readMore: 'Read more',
+      editOnGithub: 'Edit on GitHub',
     },
     toc: {
       title: 'Table of Contents',
@@ -345,7 +338,6 @@ export const ui = {
       pageTitle: 'Contact Me',
       pageDescription:
         "Let's discuss your project, a potential collaboration, or just chat about tech!",
-
       title: 'Contact Me',
       description:
         "Let's discuss your project, a potential collaboration, or just chat about tech!",
@@ -400,7 +392,6 @@ export const ui = {
         'Sorry, the page you are looking for does not seem to exist. Check the URL or return to the homepage.',
       homeLink: 'Return to Homepage',
     },
-
     tipsPage: {
       metaTitle: 'Development Tips | YOUR_NAME',
       metaDescription:
@@ -417,18 +408,23 @@ export const ui = {
       tipAvailable: 'tip available',
       editOnGithub: 'Edit on GitHub',
     },
+    agbPage: {
+      pageTitle: 'Terms and Conditions',
+      pageDescription: 'Our Terms and Conditions.',
+    },
+    impressumPage: {
+      pageTitle: 'Impressum',
+      pageDescription: 'Legal information.',
+    },
     zodErrors: {
-      // Common errors
       invalid_type: 'Invalid type.',
-      invalid_type_received_undefined: 'This field is required.', // For required fields (fallback)
+      invalid_type_received_undefined: 'This field is required.',
       required_field_custom: 'The {fieldName} field is required.',
-      // String errors
       too_small_string_minimum: 'Must be at least {minimum} characters long.',
       too_big_string_maximum: 'Must be no more than {maximum} characters long.',
       invalid_string_email: 'Invalid email address.',
       invalid_string_url: 'Invalid URL.',
       invalid_string_uuid: 'Invalid UUID.',
-      // You can add more specific messages as needed
     },
   },
 } as const;
@@ -444,19 +440,15 @@ export function useTranslations<F extends FeatureType>(
 ) {
   const currentLanguage = lang || defaultLanguage;
 
-  // Get the available keys for this feature from the default language
   type AvailableKeys = keyof UISchema[typeof defaultLanguage][F];
 
   return function t(key: AvailableKeys): string {
-    // Safely access the translation, falling back to default language if necessary
     const featureTranslations = ui[currentLanguage]?.[feature];
     if (featureTranslations && key in featureTranslations) {
       return featureTranslations[
         key as keyof typeof featureTranslations
       ] as string;
     }
-
-    // Fallback to default language
     return ui[defaultLanguage][feature][
       key as keyof (typeof ui)[typeof defaultLanguage][F]
     ] as string;
