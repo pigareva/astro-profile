@@ -1,4 +1,7 @@
 ---
+// DE home page (default locale, no URL prefix).
+// Uses the existing PortfolioScreen template with hero, featured projects, and skills sections.
+// Text content is driven by translations in src/i18n/ui.ts (de key).
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { defaultLanguage, useTranslations, type LanguageCode } from '@/i18n/ui';
 import {
@@ -26,6 +29,7 @@ const layoutProps = {
   heroGreeting: t('heroGreeting'),
   heroSubtitlePart1: t('heroSubtitlePart1'),
   heroSubtitlePart2: t('heroSubtitlePart2'),
+  heroName: t('heroName'),
   heroIntroduction: t('heroIntroduction'),
   heroViewWorkButton: t('heroViewWorkButton'),
   heroContactButton: t('heroContactButton'),

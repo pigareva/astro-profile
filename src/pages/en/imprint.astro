@@ -1,0 +1,19 @@
+---
+// EN Imprint page (/en/imprint).
+// Content: src/content/en/imprint.md via 'pages' Content Collection.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Prose from '@/components/Prose.astro';
+import { getEntry, render } from 'astro:content';
+import { useTranslations } from '@/i18n/ui';
+
+const t = useTranslations('en', 'impressumPage');
+const entry = await getEntry('pages', 'en/imprint');
+if (!entry) throw new Error('Content not found: en/imprint.md');
+const { Content } = await render(entry);
+---
+
+<BaseLayout pageTitle={t('pageTitle')} pageDescription={t('pageDescription')}>
+  <Prose>
+    <Content />
+  </Prose>
+</BaseLayout>

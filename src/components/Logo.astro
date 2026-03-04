@@ -1,10 +1,13 @@
 ---
 import { defaultLanguage, type LanguageCode } from '@/i18n/ui';
 import { getRelativeLocaleUrl } from 'astro:i18n';
+import { Image } from 'astro:assets';
+import logo from '@/assets/logo.svg';
+
 const currentLocale =
   (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
 ---
 
 <a href={getRelativeLocaleUrl(currentLocale)}>
-  <span class="text-2xl font-bold text-primary"> Your Logo </span>
+  <Image src={logo} alt="Logo" height={40} width={40} />
 </a>

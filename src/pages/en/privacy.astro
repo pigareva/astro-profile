@@ -1,0 +1,19 @@
+---
+// EN Privacy page (/en/privacy).
+// Content: src/content/en/privacy.md via 'pages' Content Collection.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Prose from '@/components/Prose.astro';
+import { getEntry, render } from 'astro:content';
+import { useTranslations } from '@/i18n/ui';
+
+const t = useTranslations('en', 'privacyPage');
+const entry = await getEntry('pages', 'en/privacy');
+if (!entry) throw new Error('Content not found: en/privacy.md');
+const { Content } = await render(entry);
+---
+
+<BaseLayout pageTitle={t('pageTitle')} pageDescription={t('pageDescription')}>
+  <Prose>
+    <Content />
+  </Prose>
+</BaseLayout>

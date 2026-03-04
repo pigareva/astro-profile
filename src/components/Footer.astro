@@ -5,11 +5,30 @@ const lang =
   (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
 const tFooter = useTranslations(lang, 'footer');
 const tSite = useTranslations(lang, 'site');
+const tNav = useTranslations(lang, 'nav');
+
+const isEN = lang === 'en';
+const legalLinks = isEN
+  ? [
+      { href: '/en/imprint', label: tNav('imprint') },
+      { href: '/en/privacy', label: tNav('privacy') },
+    ]
+  : [
+      { href: '/impressum', label: tNav('impressum') },
+      { href: '/datenschutz', label: tNav('datenschutz') },
+    ];
 ---
 
 <footer class="py-6 mt-auto text-center text-sm text-muted-foreground">
-  <div class="container mx-auto px-4">
-    &copy; {new Date().getFullYear()}
-    {tSite('title')}. {tFooter('rights')}
+  <div class="container mx-auto px-4 flex flex-col items-center gap-2">
+    <div>
+      &copy; {new Date().getFullYear()}
+      {tSite('title')}. {tFooter('rights')}
+    </div>
+    <nav class="flex gap-4">
+      {legalLinks.map(({ href, label }) => (
+        <a href={href} class="hover:text-foreground transition-colors">{label}</a>
+      ))}
+    </nav>
   </div>
 </footer>

@@ -1,0 +1,19 @@
+---
+// DE Impressum page (/impressum).
+// Content: src/content/de/impressum.md via 'pages' Content Collection.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Prose from '@/components/Prose.astro';
+import { getEntry, render } from 'astro:content';
+import { useTranslations } from '@/i18n/ui';
+
+const t = useTranslations('de', 'impressumPage');
+const entry = await getEntry('pages', 'de/impressum');
+if (!entry) throw new Error('Content not found: de/impressum.md');
+const { Content } = await render(entry);
+---
+
+<BaseLayout pageTitle={t('pageTitle')} pageDescription={t('pageDescription')}>
+  <Prose>
+    <Content />
+  </Prose>
+</BaseLayout>

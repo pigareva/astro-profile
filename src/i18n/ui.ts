@@ -66,8 +66,8 @@ export const ui = {
       contact: 'Kontakt',
       projects: 'Projekte',
       tips: 'Tipps',
-      agb: 'AGB',
       impressum: 'Impressum',
+      datenschutz: 'Datenschutz',
     },
     footer: {
       rights: 'Alle Rechte vorbehalten.',
@@ -76,10 +76,11 @@ export const ui = {
       pageTitle: 'Startseite | Fullstack-Entwickler',
       pageDescription:
         'Willkommen auf dem Portfolio von YOUR_NAME, einem Fullstack-Entwickler mit Leidenschaft für innovative Web-Erlebnisse.',
-      heroGreeting: 'Hallo, ich bin YOUR_NAME',
-      heroSubtitlePart1: 'Fullstack-Entwickler',
-      heroSubtitlePart2: 'UI/UX-Begeistert',
-      heroIntroduction: 'Fügen Sie hier eine Einleitung hinzu.',
+      heroGreeting: 'Skalierbare Web-Systeme.',
+      heroSubtitlePart1: 'Architektur, die auch unter Druck stabil bleibt.',
+      heroSubtitlePart2: '',
+      heroName: 'Olga Pigareva',
+      heroIntroduction: 'gestaltet und verantwortet technische Strukturen mit Fokus auf Stabilität, Skalierbarkeit und langfristige Wartbarkeit.',
       heroViewWorkButton: 'Meine Projekte',
       heroContactButton: 'Kontakt aufnehmen',
       heroImageAlt:
@@ -199,13 +200,13 @@ export const ui = {
       tipAvailable: 'Tipp verfügbar',
       editOnGithub: 'Auf GitHub bearbeiten',
     },
-    agbPage: {
-      pageTitle: 'Allgemeine Geschäftsbedingungen',
-      pageDescription: 'Unsere Allgemeinen Geschäftsbedingungen.',
-    },
     impressumPage: {
       pageTitle: 'Impressum',
       pageDescription: 'Rechtliche Informationen.',
+    },
+    datenschutzPage: {
+      pageTitle: 'Datenschutzerklärung',
+      pageDescription: 'Informationen zum Datenschutz gemäß DSGVO.',
     },
     zodErrors: {
       invalid_type: 'Ungültiger Typ.',
@@ -274,8 +275,9 @@ export const ui = {
       contact: 'Contact',
       projects: 'Projects',
       tips: 'Tips',
-      agb: 'AGB',
       impressum: 'Impressum',
+      imprint: 'Imprint',
+      privacy: 'Privacy',
     },
     footer: {
       rights: 'All rights reserved.',
@@ -284,10 +286,11 @@ export const ui = {
       pageTitle: 'Home | YOUR_NAME - FullStack Developer',
       pageDescription:
         'Welcome to the portfolio of YOUR_NAME, a FullStack developer passionate about creating innovative web experiences.',
-      heroGreeting: "Hi, I'm YOUR_NAME",
-      heroSubtitlePart1: 'Full Stack Developer',
-      heroSubtitlePart2: 'UI/UX Enthusiast',
-      heroIntroduction: 'Add an introduction here.',
+      heroGreeting: 'Scalable Web Systems.',
+      heroSubtitlePart1: 'Architecture that remains stable under pressure.',
+      heroSubtitlePart2: '',
+      heroName: 'Olga Pigareva',
+      heroIntroduction: 'designs and owns technical structures with a focus on stability, scalability, and long-term maintainability.',
       heroViewWorkButton: 'View My Work',
       heroContactButton: 'Get In Touch',
       heroImageAlt:
@@ -408,13 +411,13 @@ export const ui = {
       tipAvailable: 'tip available',
       editOnGithub: 'Edit on GitHub',
     },
-    agbPage: {
-      pageTitle: 'Terms and Conditions',
-      pageDescription: 'Our Terms and Conditions.',
-    },
     impressumPage: {
-      pageTitle: 'Impressum',
+      pageTitle: 'Imprint',
       pageDescription: 'Legal information.',
+    },
+    privacyPage: {
+      pageTitle: 'Privacy Policy',
+      pageDescription: 'Information about data protection.',
     },
     zodErrors: {
       invalid_type: 'Invalid type.',
