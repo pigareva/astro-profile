@@ -13,6 +13,18 @@ import {
   Database,
   PenTool,
   Network,
+  Gauge,
+  ShieldCheck,
+  Workflow,
+  FlaskConical,
+  Scale,
+  Layers,
+  GitBranch,
+  Boxes,
+  Split,
+  Component,
+  UserCog,
+  ArrowRightLeft,
   type LucideIcon,
 } from 'lucide-react';
 import type { IconType } from 'react-icons';
@@ -42,7 +54,19 @@ import {
   SiDocker,
   SiKubernetes,
   SiGit,
+  SiNextdotjs,
+  SiWebpack,
+  SiLighthouse,
+  SiVite,
+  SiGrafana,
+  SiPrometheus,
+  SiSentry,
+  SiGithubactions,
+  SiJest,
+  SiTestinglibrary,
+  SiStorybook,
 } from 'react-icons/si';
+import { FaAws, FaMicrosoft } from 'react-icons/fa';
 
 // Define the mapping from iconName to Lucide icon component
 // Mapping for Lucide icons (general skill category)
@@ -52,10 +76,22 @@ const iconComponents: Record<string, LucideIcon> = {
   Database,
   PenTool,
   Network,
+  Gauge,
+  ShieldCheck,
+  Workflow,
+  FlaskConical,
+  Scale,
+  Layers,
+  GitBranch,
+  Boxes,
+  Split,
+  Component,
+  UserCog,
+  ArrowRightLeft,
 };
 
-// Mapping for react-icons (specific technologies)
-const techIconComponents: Record<string, IconType> = {
+// Mapping for react-icons and Lucide icons (specific technologies)
+const techIconComponents: Record<string, IconType | LucideIcon> = {
   react: SiReact,
   angular: SiAngular,
   typescript: SiTypescript,
@@ -81,9 +117,29 @@ const techIconComponents: Record<string, IconType> = {
   docker: SiDocker,
   kubernetes: SiKubernetes,
   git: SiGit,
+  nextjs: SiNextdotjs,
+  webpack: SiWebpack,
+  lighthouse: SiLighthouse,
+  vite: SiVite,
+  grafana: SiGrafana,
+  prometheus: SiPrometheus,
+  sentry: SiSentry,
+  aws: FaAws,
+  azuredevops: FaMicrosoft,
+  githubactions: SiGithubactions,
+  scale: Scale,
+  layers: Layers,
+  gitbranch: GitBranch,
+  boxes: Boxes,
+  split: Split,
+  component: Component,
+  arrowrightleft: ArrowRightLeft,
+  jest: SiJest,
+  testinglibrary: SiTestinglibrary,
+  storybook: SiStorybook,
 };
 
-import type { Technology } from '@/data/skills'; // Import the Technology type
+import type { Technology } from '@/features/projects/type';
 
 export type Props = {
   title: string;
@@ -129,7 +185,7 @@ const IconComponent = iconComponents[iconName];
     {
       /* Description text indented to align with title. Calculation: icon div's mr-4 (1rem) + icon span's effective width (approx 2.25rem) = 3.25rem */
     }
-    <p class="text-sm text-muted-foreground line-clamp-3 pl-[3.25rem]">
+    <p class="text-sm text-muted-foreground pl-[3.25rem]">
       {description}
     </p>
   </CardContent>

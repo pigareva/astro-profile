@@ -171,37 +171,62 @@ export function getTranslatedProjectBySlug(
 // Skills
 export const skillsList: Array<SkillData> = [
   {
-    id: 'frontendDevelopment',
-    iconName: 'MonitorSmartphone',
+    id: 'systemDesign',
+    iconName: 'UserCog',
     technologies: [
-      { id: 'html', name: 'HTML' },
-      { id: 'css', name: 'CSS' },
-      { id: 'javascript', name: 'JavaScript' },
+      { id: 'layers', name: 'Layers' },
+      { id: 'gitbranch', name: 'GitBranch' },
+      { id: 'arrowrightleft', name: 'Trade-offs' },
+    ],
+  },
+  {
+    id: 'webArchitecture',
+    iconName: 'Boxes',
+    technologies: [
+      { id: 'react', name: 'React' },
+      { id: 'nextjs', name: 'Next.js' },
       { id: 'typescript', name: 'TypeScript' },
+      { id: 'javascript', name: 'JavaScript' },
+      { id: 'webpack', name: 'Webpack / Module Federation' },
     ],
   },
   {
-    id: 'backendDevelopment',
-    iconName: 'ServerCog',
+    id: 'systemStabilization',
+    iconName: 'ShieldCheck',
     technologies: [
-      { id: 'nodejs', name: 'Node.js' },
-      { id: 'restapi', name: 'REST APIs' },
-    ],
-  },
-  {
-    id: 'uiUxDesign',
-    iconName: 'PenTool',
-    technologies: [
-      { id: 'figma', name: 'Figma' },
-      { id: 'responsiveDesign', name: 'Responsive Design' },
-    ],
-  },
-  {
-    id: 'devOps',
-    iconName: 'Network',
-    technologies: [
+      { id: 'grafana', name: 'Grafana' },
+      { id: 'prometheus', name: 'Prometheus' },
+      { id: 'sentry', name: 'Sentry' },
       { id: 'git', name: 'Git' },
+    ],
+  },
+  {
+    id: 'performanceEngineering',
+    iconName: 'Gauge',
+    technologies: [
+      { id: 'lighthouse', name: 'Lighthouse' },
+      { id: 'vite', name: 'Vite' },
+      { id: 'webpack', name: 'Webpack' },
+    ],
+  },
+  {
+    id: 'releaseDelivery',
+    iconName: 'Workflow',
+    technologies: [
+      { id: 'githubactions', name: 'GitHub Actions' },
       { id: 'docker', name: 'Docker' },
+      { id: 'kubernetes', name: 'Kubernetes' },
+      { id: 'aws', name: 'AWS' },
+      { id: 'azuredevops', name: 'Azure DevOps' },
+    ],
+  },
+  {
+    id: 'testingQuality',
+    iconName: 'FlaskConical',
+    technologies: [
+      { id: 'jest', name: 'Jest' },
+      { id: 'testinglibrary', name: 'React Testing Library' },
+      { id: 'storybook', name: 'Storybook' },
     ],
   },
 ];

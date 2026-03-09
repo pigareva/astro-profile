@@ -36,24 +36,35 @@ export const ui = {
       },
     },
     skillsContent: {
-      frontendDevelopment: {
-        title: 'Frontend-Entwicklung',
+      webArchitecture: {
+        title: 'Web-Architektur',
         description:
-          'Erstellung interaktiver und leistungsstarker Benutzeroberflächen.',
+          'Strukturierung und Weiterentwicklung großangelegter Web-Plattformen mit Fokus auf Skalierbarkeit, klare Integrationsgrenzen und langfristige Wartbarkeit.',
       },
-      backendDevelopment: {
-        title: 'Backend-Entwicklung',
-        description: 'Aufbau robuster Serverlogik und APIs.',
-      },
-      uiUxDesign: {
-        title: 'UI/UX-Design',
+      systemDesign: {
+        title: 'Systemdesign & Architekturentscheidungen',
         description:
-          'Gestaltung intuitiver und ästhetischer Benutzererfahrungen.',
+          'Technische Entscheidungsfindung unter realen Rahmenbedingungen – mit Blick auf Systemstabilität, Lieferfähigkeit und langfristige Wartbarkeit.',
       },
-      devOps: {
-        title: 'DevOps',
+      performanceEngineering: {
+        title: 'Performance-Optimierung',
         description:
-          'Automatisierung von Entwicklungs- und Bereitstellungsprozessen.',
+          'Optimierung von Build-Verhalten, Ladezeiten, Caching-Strategien und Laufzeitprofilen für effiziente, resiliente Webanwendungen in Produktionsumgebungen.',
+      },
+      systemStabilization: {
+        title: 'Systemstabilität & Weiterentwicklung',
+        description:
+          'Stabilisierung produktiver Systeme und Weiterentwicklung gewachsener Plattformen durch Refactoring, Framework-Upgrades und strukturelle Architekturverbesserungen.',
+      },
+      releaseDelivery: {
+        title: 'Delivery Engineering',
+        description:
+          'Konzeption und Verbesserung von CI/CD-Pipelines und Deployment-Workflows für verlässliche Releases und reproduzierbare Delivery-Prozesse.',
+      },
+      testingQuality: {
+        title: 'Testing, Qualität & Accessibility',
+        description:
+          'Qualitätssicherung durch automatisiertes Testing, Accessibility-Standards und Engineering-Praktiken, die langfristige Systemzuverlässigkeit unterstützen.',
       },
     },
     site: {
@@ -80,22 +91,23 @@ export const ui = {
       heroSubtitlePart1: 'Skalierbare Web-Architekturen.',
       heroSubtitlePart2: '',
       heroName: '',
-      heroIntroduction: 'Mit über 10 Jahren in der Softwareentwicklung und mehr als 15 Jahren im IT-Umfeld liegt der Schwerpunkt auf strukturierten technischen Entscheidungen, stabilen Systemen und nachhaltiger Weiterentwicklung.',
+      heroIntroduction:
+        'Mit über 10 Jahren in der Softwareentwicklung und mehr als 15 Jahren im IT-Umfeld liegt der Schwerpunkt auf strukturierten technischen Entscheidungen, stabilen Systemen und nachhaltiger Weiterentwicklung.',
       heroViewWorkButton: 'Meine Projekte',
       heroContactButton: 'Kontakt aufnehmen',
-      heroImageAlt:
-        'Illustration von YOUR_NAME oder einem Entwicklungskonzept',
+      heroImageAlt: 'Illustration von YOUR_NAME oder einem Entwicklungskonzept',
       featuredProjectsTitle: '3 neueste Projekte',
       featuredProjectsDescription:
         'Hier sind einige Projekte, an denen ich kürzlich gearbeitet habe.',
       projectCardViewProject: 'Projekt ansehen',
       projectCardViewCode: 'Code ansehen',
       imageNotAvailable: 'Bild demnächst verfügbar',
-      mySkillsTitle: 'Meine Fähigkeiten',
+      mySkillsTitle: 'Kompetenzbereiche',
       mySkillsDescription:
-        'Entdecken Sie die Kompetenzen und Fähigkeiten, die meine Arbeit ausmachen.',
+        'Zentrale Bereiche meiner Arbeit in Systemdesign, Architektur und stabiler Softwareentwicklung.',
       exchangeTitle: 'Austausch',
-      exchangeDescription: 'Ich freue mich über fachlichen Austausch oder Projektanfragen.',
+      exchangeDescription:
+        'Ich freue mich über fachlichen Austausch oder Projektanfragen.',
     },
     blogPage: {
       pageTitle: 'Mein technischer Blog',
@@ -104,7 +116,8 @@ export const ui = {
       title: 'Mein technischer Blog',
       description:
         'Artikel und Gedanken zu Webentwicklung, Softwarearchitektur und neuen Technologien.',
-      comingSoon: 'Blog-Artikel erscheinen hier bald. Schauen Sie später vorbei!',
+      comingSoon:
+        'Blog-Artikel erscheinen hier bald. Schauen Sie später vorbei!',
       heroImageAlt: 'Titelbild für den Artikel: ',
       publishedOn: 'Veröffentlicht am: ',
       readMore: 'Weiterlesen',
@@ -215,7 +228,8 @@ export const ui = {
       invalid_type_received_undefined: 'Dieses Feld ist erforderlich.',
       required_field_custom: 'Das Feld {fieldName} ist erforderlich.',
       too_small_string_minimum: 'Muss mindestens {minimum} Zeichen lang sein.',
-      too_big_string_maximum: 'Darf nicht mehr als {maximum} Zeichen lang sein.',
+      too_big_string_maximum:
+        'Darf nicht mehr als {maximum} Zeichen lang sein.',
       invalid_string_email: 'Ungültige E-Mail-Adresse.',
       invalid_string_url: 'Ungültige URL.',
       invalid_string_uuid: 'Ungültige UUID.',
@@ -249,22 +263,35 @@ export const ui = {
       },
     },
     skillsContent: {
-      frontendDevelopment: {
-        title: 'Frontend Development',
+      webArchitecture: {
+        title: 'Web Architecture',
         description:
-          'Building interactive and high-performance user interfaces.',
+          'Structuring and evolving large-scale web platforms with a focus on scalability, integration boundaries, and long-term maintainability.',
       },
-      backendDevelopment: {
-        title: 'Backend Development',
-        description: 'Constructing robust server logic and APIs.',
+      systemDesign: {
+        title: 'System Design & Trade-offs',
+        description:
+          'Technical decision-making under real-world constraints, balancing system reliability, delivery needs, and long-term maintainability.',
       },
-      uiUxDesign: {
-        title: 'UI/UX Design',
-        description: 'Designing intuitive and aesthetic user experiences.',
+      performanceEngineering: {
+        title: 'Performance Engineering',
+        description:
+          'Optimizing build behavior, loading performance, caching strategies and runtime profiles for efficient, resilient web applications in production environments.',
       },
-      devOps: {
-        title: 'DevOps',
-        description: 'Automating development and deployment processes.',
+      systemStabilization: {
+        title: 'System Stability & Evolution',
+        description:
+          'Stabilizing production systems and evolving mature platforms through refactoring, framework upgrades, and structural architectural improvements.',
+      },
+      releaseDelivery: {
+        title: 'Delivery Engineering',
+        description:
+          'Designing and improving CI/CD pipelines and deployment workflows for reliable releases and repeatable delivery processes.',
+      },
+      testingQuality: {
+        title: 'Testing, Quality & Accessibility',
+        description:
+          'Engineering quality through automated testing, accessibility standards, and technical practices that support long-term system reliability.',
       },
     },
     site: {
@@ -292,7 +319,8 @@ export const ui = {
       heroSubtitlePart1: 'Scalable Web Architectures.',
       heroSubtitlePart2: '',
       heroName: '',
-      heroIntroduction: 'With over 10 years of software development experience and more than 15 years in IT, the focus is on structured technical decision-making, stable systems, and sustainable long-term evolution.',
+      heroIntroduction:
+        'With over 10 years of software development experience and more than 15 years in IT, the focus is on structured technical decision-making, stable systems, and sustainable long-term evolution.',
       heroViewWorkButton: 'View My Work',
       heroContactButton: 'Get In Touch',
       heroImageAlt:
@@ -303,11 +331,12 @@ export const ui = {
       projectCardViewProject: 'View Project',
       projectCardViewCode: 'View Code',
       imageNotAvailable: 'Image not available for now',
-      mySkillsTitle: 'My Skills',
+      mySkillsTitle: 'Areas of Expertise',
       mySkillsDescription:
-        'Explore the expertise and abilities that define my work and passion.',
+        'Core engineering areas shaping my work across architecture, stabilization, and sustainable system evolution.',
       exchangeTitle: 'Exchange',
-      exchangeDescription: 'Open to professional exchange and project-related discussions.',
+      exchangeDescription:
+        'Open to professional exchange and project-related discussions.',
     },
     blogPage: {
       pageTitle: 'My Technical Blog',
