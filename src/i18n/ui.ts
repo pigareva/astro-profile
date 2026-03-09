@@ -76,11 +76,11 @@ export const ui = {
       pageTitle: 'Startseite | Fullstack-Entwickler',
       pageDescription:
         'Willkommen auf dem Portfolio von YOUR_NAME, einem Fullstack-Entwickler mit Leidenschaft für innovative Web-Erlebnisse.',
-      heroGreeting: 'Skalierbare Web-Systeme.',
-      heroSubtitlePart1: 'Architektur, die auch unter Druck stabil bleibt.',
+      heroGreeting: 'Olga Pigareva',
+      heroSubtitlePart1: 'Skalierbare Web-Architekturen.',
       heroSubtitlePart2: '',
-      heroName: 'Olga Pigareva',
-      heroIntroduction: 'gestaltet und verantwortet technische Strukturen mit Fokus auf Stabilität, Skalierbarkeit und langfristige Wartbarkeit.',
+      heroName: '',
+      heroIntroduction: 'Mit über 10 Jahren in der Softwareentwicklung und mehr als 15 Jahren im IT-Umfeld liegt der Schwerpunkt auf strukturierten technischen Entscheidungen, stabilen Systemen und nachhaltiger Weiterentwicklung.',
       heroViewWorkButton: 'Meine Projekte',
       heroContactButton: 'Kontakt aufnehmen',
       heroImageAlt:
@@ -94,6 +94,8 @@ export const ui = {
       mySkillsTitle: 'Meine Fähigkeiten',
       mySkillsDescription:
         'Entdecken Sie die Kompetenzen und Fähigkeiten, die meine Arbeit ausmachen.',
+      exchangeTitle: 'Austausch',
+      exchangeDescription: 'Ich freue mich über fachlichen Austausch oder Projektanfragen.',
     },
     blogPage: {
       pageTitle: 'Mein technischer Blog',
@@ -286,11 +288,11 @@ export const ui = {
       pageTitle: 'Home | YOUR_NAME - FullStack Developer',
       pageDescription:
         'Welcome to the portfolio of YOUR_NAME, a FullStack developer passionate about creating innovative web experiences.',
-      heroGreeting: 'Scalable Web Systems.',
-      heroSubtitlePart1: 'Architecture that remains stable under pressure.',
+      heroGreeting: 'Olga Pigareva',
+      heroSubtitlePart1: 'Scalable Web Architectures.',
       heroSubtitlePart2: '',
-      heroName: 'Olga Pigareva',
-      heroIntroduction: 'designs and owns technical structures with a focus on stability, scalability, and long-term maintainability.',
+      heroName: '',
+      heroIntroduction: 'With over 10 years of software development experience and more than 15 years in IT, the focus is on structured technical decision-making, stable systems, and sustainable long-term evolution.',
       heroViewWorkButton: 'View My Work',
       heroContactButton: 'Get In Touch',
       heroImageAlt:
@@ -304,6 +306,8 @@ export const ui = {
       mySkillsTitle: 'My Skills',
       mySkillsDescription:
         'Explore the expertise and abilities that define my work and passion.',
+      exchangeTitle: 'Exchange',
+      exchangeDescription: 'Open to professional exchange and project-related discussions.',
     },
     blogPage: {
       pageTitle: 'My Technical Blog',
